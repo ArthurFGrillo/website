@@ -38,7 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     //Component.Graph(),
     Component.ProfileImage({
-      src: "/static/images/me.jpg",
+      src: "static/images/me.jpg",
       alt: "Arthur",
     }),
     Component.DesktopOnly(Component.TableOfContents()),
