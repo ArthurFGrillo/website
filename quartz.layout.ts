@@ -37,7 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     //Component.Graph(),
-    Component.ProfileImage(),
+    //Component.ProfileImage(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
