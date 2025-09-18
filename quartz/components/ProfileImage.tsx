@@ -1,22 +1,17 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 
-type Options = {
-  src: string
-  alt?: string
-}
-
-export default ((opts: Options) => {
+export default (() => {
   const ProfileImage: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     return (
       <div class={classNames(displayClass)}>
         <img class="profile-image"
-          src={opts.src}
-          alt={opts.alt ?? ""}
+          src="../static/images/me.jpg"
+          alt="Profile Image"
         />
       </div>
     )
   }
 
   return ProfileImage
-}) satisfies QuartzComponentConstructor<Options>
+}) satisfies QuartzComponentConstructor
